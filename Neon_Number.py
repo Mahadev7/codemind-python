@@ -1,10 +1,10 @@
 a=int(input())
-b=a*a
+n=a*a
 sum=0
-while b>0:
-    p=b%10
+while n>0:
+    p=n%10
     sum=sum+p
-    b=b//10
+    n=n//10
 if sum==a:
     print("Neon Number")
 else:
