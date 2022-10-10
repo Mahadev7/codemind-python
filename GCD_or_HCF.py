@@ -1,17 +1,11 @@
-def lcm(m,n):
-    t=2
-    res=1
-    while m>=t and n>=t:
-        if m%t==0 and n%t==0:
-            m=m//t
-            n=n//t
-            res=res*t
-           # return res
-        else:
-            t+=1
-    return res
-
-
-
-m,n=map(int,input().split())
-print(lcm(m,n))
+a,b=map(int,input().split())
+t=2
+res=1
+while a>=t and b>=t:
+    if a%t==0 and b%t==0:
+        a=a//t
+        b=b//t
+        res=res*t
+    else:
+        t+=1
+print(res)
