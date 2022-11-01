@@ -1,7 +1,7 @@
 n=int(input())
-list=map(int,input().split())
-odd=[]
-for i in list:
+x=list(map(int,input().split()))
+e=[]
+for i in x:
     if i%2!=0:
-        odd.append(i)
-print(sum(odd))
+        e.append(i)
+print(sum(e))
