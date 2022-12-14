@@ -1,8 +1,5 @@
-
-a=input()
-n=a.split()
-#print(n)
-c=n[-1]
-for i in c:
+a=list(map(str,input().split()))
+b=a[-1]
+for i in b:
     print(i[0])
     break
