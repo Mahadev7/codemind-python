@@ -1,8 +1,6 @@
 n=int(input())
-m=list(map(int,input().split()))
-p=[]
-for i in m:
-    if i not in p:
-        p.append(i)
-for i in p:
+x=list(map(int,input().split()))
+res = []
+[res.append(x) for x in x  if x not in res]
+for i in res:
     print(i,end=' ')
