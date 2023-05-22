@@ -12,6 +12,6 @@ if sum(s)==0:
 else:
     avg=sum(s)/len(s)
 if c==0:
-    print("-1")
+    print('-1')
 else:
-    print("%.2f" %avg)
+    print("%.2f"%avg)
