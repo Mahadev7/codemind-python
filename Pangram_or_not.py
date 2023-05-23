@@ -1,11 +1,11 @@
-x=input()
-x=x.lower()
+a=input()
+a=a.lower()
 b=[]
-for i in range(len(x)):
-    if x[i]!=' ':
-        b.append(x[i])
+for i in range(len(a)):
+    if a[i]!=' ':
+        b.append(a[i])
 b=set(b)
 if len(b)==26:
-    print("True")
+    print(True)
 else:
-    print("False")
+    print(False)
