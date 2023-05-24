@@ -1,10 +1,13 @@
 a=input()
 a=a.lower()
-b=[]
+s=[]
 c=0
 for i in a:
     if i!=' ':
-        b.append(i)
-b=set(b)
-b=sorted(b)
-print(len(b))
+        s.append(i)
+s=set(s)
+s=sorted(s)
+#print(len(s))
+for i in s:
+    c+=1
+print(c)
