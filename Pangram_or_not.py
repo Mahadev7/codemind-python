@@ -1,11 +1,12 @@
 a=input()
 a=a.lower()
 b=[]
-for i in range(len(a)):
-    if a[i]!=' ':
-        b.append(a[i])
+c='abcdefghijklmnopqrstuvwxyz'
+for i in a:
+    if i!=' ':
+        b.append(i)
 b=set(b)
-if len(b)==26:
-    print(True)
+if len(b)==len(c):
+    print("True")
 else:
-    print(False)
+    print("False")
