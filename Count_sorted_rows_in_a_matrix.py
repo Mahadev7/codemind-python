@@ -1,10 +1,10 @@
-n,m=map(int,input().split())
-a=[]
+r,c=map(int,input().split())
+m=[]
 c=0
-for i in range(n):
+for i in range(r):
     x=list(map(int,input().split()))
-    a.append(x)
-for i in  a:
+    m.append(x)
+for i in m:
     if sorted(i)==i or sorted(i,reverse=True)==i:
         c+=1
 print(c)
