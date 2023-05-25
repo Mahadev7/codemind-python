@@ -1,9 +1,8 @@
 n=int(input())
-x=list(map(int,input().split()))
+a=list(map(int,input().split()))
 b=[]
-for i in x:
+for i in a:
     p=i*i
     b.append(p)
-a=sorted(b)
-for i in a:
-    print(i,end=' ')
+x=sorted(b)
+print(*x)
