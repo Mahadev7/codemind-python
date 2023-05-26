@@ -1,7 +1,7 @@
 n=int(input())
 x=list(map(str,input().split()))
-c=0
 a=[]
+c=0
 for i in x:
     l=len(i)
     a.append(l)
