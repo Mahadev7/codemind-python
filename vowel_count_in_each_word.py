@@ -1,17 +1,10 @@
 a=input()
-c=0
-for j in a:
-    if j=='a':
-        c+=1
-    if j=='e':
-        c+=1
-    if j=='i':
-        c+=1
-    if j=='o':
-        c+=1
-    if j=='u':
-        c+=1
-    if j==' ':
-        print(c,end=' ')
-        c=0
-print(c)
+a=a.split()
+x='aeiou'
+for i in a:
+    c=0
+    i.lower()
+    for j in i:
+        if j in x:
+            c+=1
+    print(c,end=' ')
