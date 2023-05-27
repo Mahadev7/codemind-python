@@ -1,13 +1,13 @@
-n=input()
-x=list(n)
-a=[]
+a=input()
+x=list(a)
+b=[]
 for i in range(len(x)):
     if x[i].isalnum():
-        a.append(x[i])
+        b.append(x[i])
         x[i]='*'
-a.sort()
+b.sort()
 for i in range(len(x)):
     if x[i]=='*':
-        x[i]=a[0]
-        a.pop(0)
+        x[i]=b[0]
+        b.pop(0)
 print("".join(x))
