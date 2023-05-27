@@ -1,8 +1,9 @@
 a=input()
-l=[]
-u =0 
+x=[]
+y=[]
 for i in a:
     if i.isalpha() or i.isnumeric() or i==' ':
-        continue
-    u+=1
-print(u)
+        x.append(i)
+    else:
+        y.append(i)
+print(len(y))
