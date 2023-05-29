@@ -1,8 +1,8 @@
 n=int(input())
-x=list(map(int,input().split()))
-s=0
-for i in x:
+arr=list(map(int,input().split()))
+c=0
+for i in arr:
     i=str(i)
     for j in i:
-        s+=int(j)
-print(s)
+        c+=int(j)
+print(c)
