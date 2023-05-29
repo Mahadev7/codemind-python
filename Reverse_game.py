@@ -1,8 +1,7 @@
 n=int(input())
-x=list(map(int,input().split()))
-c=[]
+x=list(map(str,input().split()))
+s=[]
 for i in x:
-    i=str(i)
     j=i[::-1]
-    c.append(int(j))
-print(*c)
+    s.append(int(j))
+print(*s)
