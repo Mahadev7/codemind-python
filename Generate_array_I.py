@@ -1,9 +1,10 @@
 n=int(input())
-x=list(map(int,input().split()))
-l=[]
+a=list(map(int,input().split()))
+z=[]
 for i in range(0,n,2):
-    a=x[i]
-    b=x[i+1]
-    for i in range(b):
-        l.append(a)
-print(*l)
+    x=a[i]
+    y=a[i+1]
+    for i in range(y):
+        z.append(x)
+for i in z:
+    print(i,end=' ')
