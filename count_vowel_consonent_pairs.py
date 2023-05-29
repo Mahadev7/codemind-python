@@ -1,12 +1,12 @@
-a=input()
+s=input()
+a=[]
+x='AEIOUaeiou'
+y='BCDFGHJKLMNPQRSTVWXYZbcdfghjklmnpqrstvwxyz'
 i=0
-j=len(a)-1
-l=[]
-s1='aeiouAEIOU'
-s2='BCDFGHJKLMNPQRSTVWXYZbcdfghjklmnpqrstvwxyz'
+j=len(s)-1
 while i<j:
-    if (a[i] in s1 and a[j] in s2) or (a[j] in s1 and a[i] in s2):
-        l.append((a[i],a[j]))
+    if (s[i] in x and s[j] in y) or (s[i] in y and s[j] in x):
+        a.append((s[i],s[j]))
     i+=1
     j-=1
-print(len(l))
+print(len(a))
