@@ -5,26 +5,23 @@ def isprime(n):
         if n%i==0:
             return False
     return True
-
-
-n=int(input())
-x=n+1
-y=n-1
+x=int(input())
+a=x+1
+b=x-1
 while 1:
-    if isprime(n):
+    if isprime(x):
         print(0)
         break
-    if isprime(x) and isprime(y):
-        c=abs(n-x)
-        d=abs(n-y)
-        print(min(c,d))
+    if isprime(a) and isprime(b):
+        x1=abs(x-a)
+        y1=abs(x-b)
+        print(min(x1,y1))
         break
-    if isprime(x):
-        print(abs(n-x))
+    if isprime(a):
+        print(abs(a-x))
         break
-    if isprime(y):
-        print(abs(n-y))
+    if isprime(b):
+        print(abs(b-x))
         break
-    x+=1
-    y-=1
-    
+    a+=1
+    b-=1
