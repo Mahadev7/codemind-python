@@ -5,12 +5,12 @@ def isprime(n):
         if n%i==0:
             return False
     return True
-n=int(input())
-if isprime(n):
-    while n:
-        p=n%10
-        n=n//10
-        if not isprime(p):
+a=int(input())
+if isprime(a):
+    while a:
+        d=a%10
+        a=a//10
+        if not isprime(d):
             print("Not Mega Prime")
             break
     else:
