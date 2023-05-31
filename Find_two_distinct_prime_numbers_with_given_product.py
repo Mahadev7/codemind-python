@@ -1,20 +1,20 @@
-def prime(n):
-    if n<2:
-        return False
-    for i in range(2,n):
-        if n%i==0:
+def prime(s):
+    # if s<2:
+    #     return False
+    for i in range(2,s):
+        if s%i==0:
             return False
     return True
-n=int(input())
-l=[]
-for i in range(2,n):
-    for j in range(2,n):
+a=int(input())
+p=[]
+for i in range(2,a):
+    for j in range(2,a):
         if prime(i) and prime(j):
-            if i*j==n:
-                l.append(i)
-                l.append(j)
-if sum(l)==0:
+            if i*j==a:
+                p.append(i)
+                p.append(j)
+if sum(p)==0:
     print("-1")
 else:
-    p=set(l)
-    print(*p)
+    x=set(p)
+    print(*x)
