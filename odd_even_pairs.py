@@ -1,26 +1,27 @@
 n=int(input())
 x=list(map(int,input().split()))
-p1,p2=[],[]
+a,b=[],[]
 for i in x:
     if i%2!=0:
-        p1.append(i)
+        a.append(i)
     else:
-        p2.append(i)
-l=[]
+        b.append(i)
+s=[]
 while True:
-    if len(p1)==0 and len(p2)==0:
+    if len(a)==0 and len(b)==0:
         break
-    elif len(p1)==0:
-        l.append(p2[0])
-        p2.pop(0)
-    elif len(p2)==0:
-        l.append(p1[0])
-        p1.pop(0)
+    elif len(a)==0:
+        s.append(b[0])
+        b.pop(0)
+    elif len(b)==0:
+        s.append(a[0])
+        a.pop(0)
     else:
-        l.append(p1[0])
-        l.append(p2[0])
-        p1.pop(0)
-        p2.pop(0)
-if len(l)%2!=0:
-    l.append(0)
-print(*l)
+        s.append(a[0])
+        s.append(b[0])
+        a.pop(0)
+        b.pop(0)
+# print(s)
+if len(s)%2!=0:
+    s.append(0)
+print(*s)
