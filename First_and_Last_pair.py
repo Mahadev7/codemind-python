@@ -1,15 +1,15 @@
 n=int(input())
 x=list(map(int,input().split()))
+s=[]
 i=0
 j=n-1
-l=[]
 while i<=j:
     if i==j:
-        l.append(x[i])
-        l.append(0)
+        s.append(x[i])
+        s.append(0)
         break
-    l.append(x[i])
-    l.append(x[j])
+    s.append(x[i])
+    s.append(x[j])
     i+=1
     j-=1
-print(*l)
+print(*s)
