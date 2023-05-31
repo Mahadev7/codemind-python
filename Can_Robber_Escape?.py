@@ -1,10 +1,10 @@
 a=int(input())
-x=list(map(int,input().split()))
-c=0
-for i in range(len(x)):
-    if x[i]%2==1:
-        c+=1
-if c>2:
+y=list(map(int,input().split()))
+p=0
+for i in range(a):
+    if y[i]%2==1:
+        p+=1
+if p>2:
     print("NO")
 else:
     print("YES")
