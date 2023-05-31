@@ -5,13 +5,13 @@ def prime(n):
         if n%i==0:
             return False
     return True
-a=int(input())
-b=int(input())
-c=a+b
-d=0
+x=int(input())
+y=int(input())
+z=x+y
+p=0
 while True:
-   d+=1
-   c=c+1
-   if prime(c):
-       break
-print(d)
+    p+=1
+    z=z+1
+    if prime(z):
+        break
+print(p)
