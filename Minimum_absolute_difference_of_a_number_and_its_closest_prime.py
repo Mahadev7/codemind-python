@@ -1,27 +1,27 @@
-def isprime(n):
+def prime(n):
     if n<2:
         return False
     for i in range(2,n):
         if n%i==0:
             return False
     return True
-x=int(input())
-a=x+1
-b=x-1
-while 1:
-    if isprime(x):
+n=int(input())
+a=n+1
+b=n-1
+while True:
+    if prime(n):
         print(0)
         break
-    if isprime(a) and isprime(b):
-        x1=abs(x-a)
-        y1=abs(x-b)
-        print(min(x1,y1))
+    if prime(a) and prime(b):
+        x=abs(a-n)
+        y=abs(b-n)
+        print(min(x,y))
         break
-    if isprime(a):
-        print(abs(a-x))
+    if prime(a):
+        print(abs(n-a))
         break
-    if isprime(b):
-        print(abs(b-x))
+    if prime(b):
+        print(abs(n-b))
         break
     a+=1
     b-=1
