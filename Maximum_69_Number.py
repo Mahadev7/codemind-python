@@ -1,8 +1,8 @@
 a=input()
-p=list(a)
-for i in range(len(p)):
-    if p[i]=='6':
-        p[i]='9'
+b=list(a)
+for i in range(len(b)):
+    if b[i]=='6':
+        b[i]='9'
         break
-x="".join(p)
-print(int(x))
+p="".join(b)
+print(p)
