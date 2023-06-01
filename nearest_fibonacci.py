@@ -1,13 +1,13 @@
-n=int(input())
-a=0
-b=1
-while b<n:
-    c=a+b
-    a=b
-    b=c
-if abs(a-n)<abs(b-n):
-    print(a)
-elif abs(a-n)==abs(b-n):
-    print(a,b)
+a=int(input())
+x=0
+y=1
+while y<a:
+    z=x+y
+    x=y
+    y=z
+if abs(x-a)<abs(y-a):
+    print(x)
+elif abs(x-a)==abs(y-a):
+    print(x,y)
 else:
-    print(b)
+    print(y)
