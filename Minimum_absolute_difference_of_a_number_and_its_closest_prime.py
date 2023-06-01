@@ -6,22 +6,22 @@ def prime(n):
             return False
     return True
 n=int(input())
-a=n+1
-b=n-1
+x=n+1
+y=n-1
 while True:
     if prime(n):
         print(0)
         break
-    if prime(a) and prime(b):
-        x=abs(a-n)
-        y=abs(b-n)
-        print(min(x,y))
+    if prime(x) and prime(y):
+        a=abs(x-n)
+        b=abs(y-n)
+        print(min(a,b))
         break
-    if prime(a):
-        print(abs(n-a))
+    if prime(x):
+        print(abs(x-n))
         break
-    if prime(b):
-        print(abs(n-b))
+    if prime(y):
+        print(abs(y-n))
         break
-    a+=1
-    b-=1
+    x+=1
+    y-=1
