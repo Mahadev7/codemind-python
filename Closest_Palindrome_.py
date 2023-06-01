@@ -3,9 +3,9 @@ def palin(n):
     if n==n[::-1]:
         return True
     return False
-n=int(input())
-a=n+1
-b=n-1
+x=int(input())
+a=x+1
+b=x-1
 while True:
     if palin(a) and palin(b):
         print(b,a)
@@ -18,4 +18,3 @@ while True:
         break
     a+=1
     b-=1
-    
