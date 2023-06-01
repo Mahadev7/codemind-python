@@ -1,5 +1,5 @@
-a=input()
-b=a.split()
-for i in b:
-    p=i[::-1]
-    print(p,end=' ')
+p=input()
+x=p.split()
+for i in x:
+    y=i[::-1]
+    print(y,end=' ')
