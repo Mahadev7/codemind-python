@@ -1,11 +1,7 @@
-a,b=map(int,input().split())
-t=2
-res=1
-while a>=t and b>=t:
-    if a%t==0 and b%t==0:
-        a=a//t
-        b=b//t
-        res=res*t
-    else:
-        t+=1
-print(res)
+a,b = map(int,input().split())
+c = max(a,b)
+l=[]
+for i in range(1,c+1):
+    if a%i==0 and b%i == 0:
+        l.append(i)
+print(max(l))
