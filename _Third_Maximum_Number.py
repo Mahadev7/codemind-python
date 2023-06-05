@@ -1,11 +1,12 @@
 n=int(input())
 x=list(map(int,input().split()))
 x=set(x)
-p=[]
+l=[]
 for i in x:
-    p.append(i)
-m=sorted(p,reverse=True)
-if len(m)>=3:
-    print(m[2])
+    l.append(i)
+l1=sorted(l,reverse=True)
+# print(l)
+if len(l1)>=3:
+    print(l1[2])
 else:
-    print(max(m))
+    print(max(l1))
