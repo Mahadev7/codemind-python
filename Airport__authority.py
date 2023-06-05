@@ -1,10 +1,10 @@
-a=[]
+b=[]
 for i in range(int(input())):
-    n=int(input())
-    a.append(n)
+    a=int(input())
+    b.append(a)
 t=int(input())
 c=0
-for i in a:
+for i in b:
     if i>t:
         c+=2
     else:
