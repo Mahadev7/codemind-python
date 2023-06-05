@@ -1,9 +1,10 @@
-x=list(map(int,input().split()))
-y=list(map(int,input().split()))
-c,p=0,0
-for i in range(len(x)):
-    if x[i]>y[i]:
-        c+=1
-    elif x[i] < y[i] :
-        p+=1
-print(c,p)
+a=list(map(int,input().split()))
+b=list(map(int,input().split()))
+x=0
+y=0
+for i in range(len(a)):
+    if a[i]>b[i]:
+        x+=1
+    elif a[i]<b[i]:
+        y+=1
+print(x,y)
