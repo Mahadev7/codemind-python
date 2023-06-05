@@ -4,10 +4,9 @@ def prime(n):
     for i in range(2,n):
         if n%i==0:
             return False
-    return True
-a=int(input())
-b=int(input())
-c=[]
-for i in range(a,b+1):
+    return True 
+x=int(input())
+y=int(input())
+for i in range(x,y+1):
     if prime(i):
         print(i)
