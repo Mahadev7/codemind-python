@@ -1,9 +1,8 @@
 import math
 for i in range(int(input())):
-    a=int(input())
-    b=a*a
-    r=math.sqrt(a)
-    if int(r+0.5)**2==a:
+    x=int(input())
+    y=math.sqrt(x)
+    if int(y+0.5)**2==x:
         print("True")
     else:
         print("False")
