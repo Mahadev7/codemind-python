@@ -8,10 +8,10 @@ def prime(n):
 a=int(input())
 b=int(input())
 c=a+b
-p=0
+s=0
 while True:
-    p+=1
+    s+=1
     c+=1
     if prime(c):
         break
-print(p)
+print(s)
