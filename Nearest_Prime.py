@@ -6,21 +6,21 @@ def prime(n):
             return False
     return True
 for i in range(int(input())):
-    a=int(input())
-    x=a+1
-    y=a-1
-    while 1:
-        if prime(a):
-            print(a)
-            break
-        if prime(x) and prime(y):
-            print(min(x,y))
-            break
+    x=int(input())
+    a=x+1
+    b=x-1
+    while True:
         if prime(x):
             print(x)
             break
-        if prime(y):
-            print(y)
+        if prime(a) and prime(b):
+            print(min(a,b))
             break
-        x+=1
-        y-=1
+        if prime(a):
+            print(a)
+            break
+        if prime(b):
+            print(b)
+            break
+        a+=1
+        b-=1
