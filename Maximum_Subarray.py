@@ -1,12 +1,12 @@
-n=int(input())
-x=list(map(int,input().split()))
-p=[]
-for i in range(len(x)):
-    for j in range(i,len(x)):
-        s=x[i:j+1]
-        p.append(s)
-a=[]
-for i in p:
-    c=sum(i)
-    a.append(c)
-print(max(a))
+a=int(input())
+b=[]
+c=list(map(int,input().split()))
+for i in range(a):
+    for j in range(i,a):
+        d=c[i:j+1]
+        b.append(d)
+x=[]
+for i in b:
+    p=sum(i)
+    x.append(p)
+print(max(x))
