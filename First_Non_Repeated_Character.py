@@ -1,9 +1,9 @@
-for  i in range(int(input())):
-    n=int(input())
-    a=input()
-    for i in range(n):
-        if a.count(a[i])==1:
-            print(a[i])
+for i in range(int(input())):
+    a=int(input())
+    l=input()
+    for i in range(a):
+        if l.count(l[i])==1:
+            print(l[i])
             break
     else:
-        print(-1)
+        print('-1')
