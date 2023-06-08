@@ -1,42 +1,43 @@
-x=input()
-a,b,c=[],[],[]
-for i in x:
+n=input()
+x,y,z=[],[],[]
+for i in n:
     if not i.isalnum():
-        a.append(i)
+        x.append(i)
     elif i.isdigit() and int(i)%2==0:
-        b.append(i)
+        y.append(i)
     elif i.isdigit() and int(i)%2!=0:
-        c.append(i)
-l=len(a)
-r=[]
-while True:
-    if l%2==0:
-        if len(b)==0 and len(c)==0:
+        z.append(i)
+p=len(x)
+s=[]
+while 1:
+    if p%2==0:
+        if len(y)==0 and len(z)==0:
             break
-        elif len(b)==0:
-            r.append(c[0])
-            c.pop(0)
-        elif len(c)==0:
-            r.append(b[0])
-            b.pop(0)
+        elif len(z)==0:
+            s.append(y[0])
+            y.pop(0)
+        elif len(y)==0:
+            s.append(z[0])
+            z.pop(0)
         else:
-            r.append(b[0])
-            r.append(c[0])
-            c.pop(0)
-            b.pop(0)
+            s.append(y[0])
+            s.append(z[0])
+            y.pop(0)
+            z.pop(0)
     else:
-        if len(b)==0 and len(c)==0:
+        if len(z)==0 and len(y)==0:
             break
-        if len(c)==0:
-            r.append(b[0])
-            b.pop(0)
-        elif len(b)==0:
-            r.append(c[0])
-            c.pop(0)
+        elif len(y)==0:
+            s.append(z[0])
+            z.pop(0)
+        elif len(z)==0:
+            s.append(y[0])
+            y.pop(0)
         else:
-            r.append(c[0])
-            r.append(b[0])
-            b.pop(0)
-            c.pop(0)
-z=''.join(r)
-print(z)
+            s.append(z[0])
+            s.append(y[0])
+            z.pop(0)
+            y.pop(0)
+q=''.join(s)
+print(q)
+        
