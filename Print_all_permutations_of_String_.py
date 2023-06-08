@@ -1,5 +1,5 @@
 from itertools import permutations
-n=input()
-for i in permutations(n):
-    b=''.join(i)
-    print(b)
+a=input()
+w=[''.join(i) for i in permutations(a)]
+for i in w:
+    print(i)
