@@ -11,7 +11,7 @@ a=int(a)
 b=int(b)
 if prime(a) and prime(b):
     print("circular prime")
-elif (prime(a) and not prime(b)) or (prime(b) and not prime(a)):
+elif (prime(a) and not prime(b)) or (not prime(a) and prime(b)):
     print("prime but not a circular prime")
 elif not prime(a) and not prime(b):
     print("not prime")
