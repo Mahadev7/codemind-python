@@ -1,13 +1,10 @@
 n=int(input())
 x=list(map(int,input().split()))
-a=[]
-b=[]
+d={}
 for i in x:
-    if i in a:
-        pass
+    if i not in d:
+        d[i]=1
     else:
-        s=x.count(i)
-        a.append(i)
-        b.append(i)
-        b.append(s)
-print(*b)
+        d[i]+=1
+for i,j in d.items():
+    print(i,j,end=' ')
