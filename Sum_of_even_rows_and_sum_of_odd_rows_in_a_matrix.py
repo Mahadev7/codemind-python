@@ -1,21 +1,17 @@
 r,c=map(int,input().split())
 m=[]
-e=[]
-o=[]
-a=[]
-b=[]
+p,q=[],[]
 for i in range(r):
     x=list(map(int,input().split()))
     m.append(x)
 for i in range(r):
     if i%2==0:
-        e.append(m[i])
+        p.append(m[i])
     else:
-        o.append(m[i])
-for i in e:
-    p=sum(i)
-    a.append(p)
-for i in o:
-    q=sum(i)
-    b.append(q)
-print(sum(a),sum(b))
+        q.append(m[i])
+p1,q1=[],[]
+for i in p:
+    p1.append(sum(i))
+for i in q:
+    q1.append(sum(i))
+print(sum(p1),sum(q1))
