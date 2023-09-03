@@ -1,11 +1,6 @@
-for i in range(int(input())):
-    a=int(input())
-    x=list(map(int,input().split()))
-    c=[]
-    p=[]
-    for i in range(1,a+1):
-        c.append(i)
-    for i in c:
-        if i not in x:
-            p.append(i)
-    print(*p)
+for _ in range(int(input())):
+    n=int(input())
+    a = list(map(int,input().split()))
+    p = n*(n+1)//2
+    s=sum(a)
+    print(abs(p-s))
