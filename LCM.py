@@ -9,11 +9,5 @@ def lcm(a,b):
         else:
             t+=1
     return res*a*b
-
-
-
-
-
-
 a,b=map(int,input().split())
 print(lcm(a,b))
